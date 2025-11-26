@@ -4,12 +4,12 @@ Return config on servers to start web services from JupyterLab
 See https://jupyter-server-proxy.readthedocs.io/en/latest/server-process.html
 for more information.
 """
-__version__ = '0.02'
+__version__ = '0.01'
 
 import os
 
 
-def setup_adjustment_proxy():
+def setup_podcast_proxy():
     """
     Proxy wrapper to launch Streamlit from JupyterHub on Binder
 
@@ -19,7 +19,7 @@ def setup_adjustment_proxy():
     """
     return {
         'command': [
-            "streamlit", "run", "/home/jupyter-data/adjustment/adjustment.py",
+            "streamlit", "run", "/home/jupyter-data/webapp/podcasts_learning/app.py",
             "--browser.gatherUsageStats", "false",
             "--browser.serverAddress", "0.0.0.0",
             "--server.port", "{port}",
@@ -30,7 +30,7 @@ def setup_adjustment_proxy():
         'environment': {},
         'timeout': 30.0,
         'launcher_entry': {
-            'title': '成績管理系統',
-            'icon_path': os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icons', 'adjustment.svg'),
+            'title': 'Podcast學習',
+            'icon_path': os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icons', 'podcast.svg'),
         }
     }
