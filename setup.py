@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-    name="jupyter-adjustment-proxy",
+    name="jupyter-podcast-proxy",
     version='0.0.2',
     url="https://gitlab.mpcdf.mpg.de/khr/jupyter-streamlit-proxy",
     author="Klaus Reuter",
@@ -14,10 +14,10 @@ setuptools.setup(
     ],
     entry_points={
         'jupyter_serverproxy_servers': [
-            'adjustment = jupyter_adjustment_proxy:setup_adjustment_proxy',
+            'podcast = jupyter_podcast_proxy:setup_podcast_proxy',
         ]
     },
     package_data={
-        'jupyter_adjustment_proxy': ['icons/*'],
+        'jupyter_podcast_proxy': ['icons/*'],
     },
 )
