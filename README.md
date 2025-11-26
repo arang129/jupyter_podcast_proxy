@@ -1,4 +1,4 @@
-# jupyter-adjustment-proxy : 教師與助教調整分數與評語用
+# jupyter-podcast-proxy : 學習英語
 
 jupyter-streamlit-proxy exposes and launches Streamlit via the relative URL
 'streamlit', thereby enabling Streamlit-based web applications being launched
@@ -7,11 +7,11 @@ within JupyterLab to launch and access the Streamlit web app via the GUI.
 
 As the entry point for the webapp launch it expects a script at
 
-`pip install git+https://github.com/arang129/jupyter_adjustment_proxy.git`
+`pip install git+https://github.com/arang129/jupyter_podcast_proxy.git`
 
-`pip install --upgrade git+https://github.com/arang129/jupyter_adjustment_proxy.git`
+`pip install --upgrade git+https://github.com/arang129/jupyter_podcast_proxy.git`
 
-`pip uninstall jupyter_adjustment_proxy`
+`pip uninstall jupyter_podcast_proxy`
 
 which has the actual streamlit launch command inside, including the actual
 file name of the web application.
